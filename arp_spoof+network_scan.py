@@ -1,5 +1,6 @@
 #!usr/bin/env python
 #All code was taught by ZSeurity
+#to run do use argument -t (target ip)
 
 import scapy.all as scapy
 import time
@@ -53,7 +54,6 @@ def restore(destination_ip, source_ip):
     source_mac = get_mac(source_ip)
     packet = scapy.ARP(op=2, pdst=destination_ip, hwdst=destination_mac, psrc=source_ip, hwsrc=source_mac)
     scapy.send(packet, count=4, verbose=False)
-
 
 try:
     sent_packet_count = 0
