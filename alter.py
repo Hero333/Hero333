@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 #alter.py
+#Code by Peter Van and Connor Combs
 from mcpi.minecraft import Minecraft
 from mcpi import block
 import time
 # ~ mc = Minecraft.create()	
 mc = Minecraft.create("10.183.3.20", 4711)
-
 
 a = 1
 o_2 = -2
